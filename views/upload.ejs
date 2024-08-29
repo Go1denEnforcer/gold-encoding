@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload New File</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div class="left-nav">
+            <img src="/logo.png" alt="Logo" class="logo">
+            <a href="/files">View Files</a>
+            <a href="/upload">Upload File</a>
+        </div>
+        <a href="/logout">Logout</a>
+    </div>
+
+    <div class="container">
+        <h1>Upload a New File</h1>
+
+        <!-- Display Error Message -->
+        <% if (errorMessage && typeof errorMessage === 'string' && errorMessage.trim() !== '') { %>
+            <div class="alert alert-error">
+                <%= errorMessage %>
+            </div>
+        <% } %>
+
+                <!-- Display Success Message -->
+                <% if (successMessage && typeof successMessage === 'string' && successMessage.trim() !== '') { %>
+                    <div class="alert alert-success">
+                        <%= successMessage %>
+                    </div>
+                <% } %>
+
+
+                        <form action="/upload" method="POST" enctype="multipart/form-data">
+                            <input type="file" name="video" accept="video/*">
+                            <button type="submit">Upload</button>
+                        </form>
+    </div>
+</body>
+
+</html>

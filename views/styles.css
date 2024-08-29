@@ -1,0 +1,219 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .left-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .left-nav a {
+    margin-left: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    color: white;
+}
+
+/* Logo styling */
+.navbar img.logo {
+    height: 60px;
+    width: auto;
+}
+
+/* Main container styling */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Headings */
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* File list styling */
+.file-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.file-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+.file-preview {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+}
+
+.file-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.file-details {
+    padding: 10px;
+}
+
+.file-details p {
+    margin: 5px 0;
+}
+
+.transcoded-files {
+    margin-top: 10px;
+}
+
+.transcoded-files a {
+    display: block;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.transcoded-files a:hover {
+    text-decoration: underline;
+}
+
+/* Button styling */
+button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #575757;
+}
+
+/* File input styling */
+input[type="file"] {
+    display: block;
+    margin: 20px 0;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    
+    .navbar a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .navbar img.logo {
+        height: 40px; /* Reduce logo size on smaller screens */
+    }
+}
+
+/* Success message styling */
+.alert {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Form and input styles */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Container for the login form */
+.login-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Logo styling */
+.logo img {
+    width: 400px; 
+    margin-bottom: 20px;
+}
+
+/* Thumbnail styles */
+.thumbnail {
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
